@@ -1,17 +1,20 @@
 const skills = [
     { name: "HTML/CSS", level: 85, category: "frontend" },
-    { name: "JavaScript", level: 80, category: "frontend" },
-    { name: "Tailwind CSS", level: 80, category: "frontend" },
-    { name: "React", level: 60, category: "frontend" },
+    { name: "JavaScript", level: 70, category: "frontend" },
+    { name: "Tailwind CSS", level: 70, category: "frontend" },
+    { name: "React", level: 50, category: "frontend" },
+    { name: "Laravel", level: 60, category: "frontend" },
+    { name: "Yii2", level: 35, category: "frontend" },
+    { name: "Flutter", level: 55, category: "frontend" },
 
-    { name: "Git/GitHub", level: 85, category: "tools" },
-    { name: "Figma", level: 90, category: "tools" },
+    { name: "Git/GitHub", level: 65, category: "tools" },
+    { name: "Figma", level: 80, category: "tools" },
     // { name: "VS Code", level: 85, category: "tools" },
 ]
 
 export const SkillsSection = () => {
     return (
-        <section id="skills" className="py-24 px-4 relative bg-secondary/30">
+        <section id="skills" className="py-24 px-4 relative bg-secondary/90">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     My <span className="text-primary">Skills</span>
@@ -24,7 +27,7 @@ export const SkillsSection = () => {
                                 <h3 className="font-semibold text-lg"> {skill.name} </h3>
                             </div>
 
-                            <div className="w-full bg- h-2 rounded-full overflow-hidden">
+                            <div className="w-full bg-primary/30 h-2 rounded-full overflow-hidden">
                                 <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
                                     style={{ width: skill.level + "%" }} />
                             </div>

@@ -13,16 +13,14 @@ export const AboutSection = () => {
                     <div className="space-y-6">
                         <h3 className="text-2xl font-semibold">Passionate Developer and Student</h3>
                         <p className="text-muted-foreground">
-                            Hi my name is Ebony Dark’ness Dementia Raven Way and I have long ebony black hair (that’s how
-                            I got my name) with purple streaks and red tips that reaches my mid-back and icy blue eyes like
-                            limpid tears and a lot of people tell me I look like Amy Lee (AN: if u don’t know who she is get da
-                            hell out of here!).
+                            I’m an Informatics Engineering student with a growing passion for building
+                            web applications that are both functional and visually intuitive.
+                            Currently learning the ins and outs of frontend development and the UI/UX design process,
+                            I enjoy turning ideas into responsive, user-friendly interfaces using technologies like Laravel, React, and Tailwind.
                         </p>
                         <p className="text-muted-foreground">
-                            I’m not related to Gerard Way but I wish I was because he’s a major fucking
-                            hottie. I’m a vampire but my teeth are straight and white. I have pale white skin. I’m also a witch,
-                            and I go to a magic school called Hogwarts in England where I’m in the seventh year (I’m
-                            seventeen).
+                            Through hands-on projects and internships, I’m continuously developing my skills and aiming to create
+                            impactful digital experiences while collaborating in dynamic, real-world environments.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -30,8 +28,8 @@ export const AboutSection = () => {
                                 Get in Touch
                             </a>
                             <a href="#contact" className={cn(
-                                "px-6 py-2 rounded-full border border-primary text-primary",
-                                "hover:bg-primary/35 hover:text-primary-foreground transition-colors duration-300"
+                                "px-6 py-2 rounded-full border border-secondary-foreground text-secondary-foreground",
+                                "hover:bg-secondary-foreground/35 hover:text-primary-foreground transition-colors duration-300"
                             )}>
                                 Download CV
                             </a>

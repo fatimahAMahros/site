@@ -15,9 +15,8 @@ export const HeroSection = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        Hi my name is Ebony Dark'ness Dementia Raven Way and I have long ebony black hair (that's how
-                        I got my name) with purple streaks and red tips that reaches my mid-back and icy blue eyes like
-                        limpid tears and a lot of people tell me I look like Amy Lee
+                        I’m learning to build meaningful digital experiences through clean design and modern code.
+                        Focused on frontend development and UI/UX, I turn ideas into responsive and user-friendly web interfaces.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
