@@ -1,6 +1,7 @@
 {
   "name": "site",
   "private": true,
+  "homepage": "https://fatimahamahros.github.io/site/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
