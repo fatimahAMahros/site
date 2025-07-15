@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 
 
 export const ContactSection = () => {
@@ -59,6 +59,11 @@ export const ContactSection = () => {
                                 target="_blank"
                                 className="p-3 rounded-full hover:bg-primary/20">
                                 <Instagram />
+                            </a>
+                            <a href="https://github.com/fatimahAMahros"
+                                target="_blank"
+                                className="p-3 rounded-full hover:bg-primary/20">
+                                <Github />
                             </a>
                         </div>
                     </div>

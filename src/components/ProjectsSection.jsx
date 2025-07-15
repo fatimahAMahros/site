@@ -1,11 +1,11 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 
 const projects = [
     {
         id: 1,
         title: "Countlorie",
         description: "Personalised daily calorie intake logging app, equipped with a robust local and international food database.",
-        image: "/projects/countlorie.png",
+        image: "projects/countlorie.png",
         tags: ["React", "TailwindCSS", "Flutter"],
         demoUrl: "https://countlorie.agileteknik.com/",
         githubUrl: "#",
@@ -14,7 +14,7 @@ const projects = [
         id: 2,
         title: "JDIH Perumda Surya Sembada",
         description: "A Legal product documentation and information app where the process of requesting and creating new legal products can be done digitally, complete with built-in pdf annotator",
-        image: "/projects/JDIH.png",
+        image: "projects/JDIH.png",
         tags: ["Laravel", "TailwindCSS", "Figma"],
         demoUrl: "#",
         githubUrl: "#",
@@ -36,7 +36,7 @@ export const ProjectsSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, key) => (
                         <div
-                            key={key}
+                            key={project.id}
                             className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                         >
                             <div className="h-48 overflow-hidden">
@@ -49,8 +49,8 @@ export const ProjectsSection = () => {
 
                             <div className="p-6">
                                 <div className="flex flex-wrap mb-4 gap-2">
-                                    {project.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium rounded-full border bg-primary/20 text-secondary-foreground">
+                                    {project.tags.map((tag, i) => (
+                                        <span key={`${tag}-${i}`} className="px-2 py-1 text-xs font-medium rounded-full border bg-primary/20 text-secondary-foreground">
                                             {tag}
                                         </span>
                                     ))}
@@ -67,11 +67,11 @@ export const ProjectsSection = () => {
                                             className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                             <ExternalLink size={24} />
                                         </a>
-                                        <a href={project.githubUrl}
+                                        {/* <a href={project.githubUrl}
                                             target="_blank"
                                             className="text-foreground/80 hover:text-primary transition-colors duration-300">
                                             <Github size={24} />
-                                        </a>
+                                        </a> */}
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +80,9 @@ export const ProjectsSection = () => {
                 </div>
 
                 <div className="text-center mt-12 ">
-                    <a href="" className="cosmic-button w-fit flex items-center mx-auto gap-2">
+                    <a href="https://github.com/fatimahAMahros" 
+                    target="_blank"
+                    className="cosmic-button w-fit flex items-center mx-auto gap-2">
                         Check Out My Github <ArrowRight size={16} />
                     </a>
                 </div>
