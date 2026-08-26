@@ -32,7 +32,7 @@ export const AboutSection = () => {
                                 Get in Touch
                             </a>
                             <a 
-                            href="https://drive.google.com/file/d/10jPxMIGaMoclrmjxOpBCFMouBvQbnpnr/view?usp=sharing" 
+                            href="https://drive.google.com/drive/folders/1eqPXm4h_xkdSNo3q_IZd-LOChi9yQRfB?usp=sharing" 
                             target="_blank"
                             className={cn(
                                 "px-6 py-2 rounded-full border border-secondary-foreground text-secondary-foreground",
